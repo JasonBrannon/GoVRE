@@ -30,6 +30,7 @@ Download App from [Google Play](https://play.google.com/store/apps/details?id=co
 
 # ToDos
 - Add Spotsy Station when available (Probably Fall 2015)
+- Add "Toothing" support for **John Maynard**
 
 # How to Contribute
 * [CONTRIBUTING DOC](https://github.com/JasonBrannon/GoVRE/blob/master/CONTRIBUTING.md)
