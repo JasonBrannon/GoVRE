@@ -34,5 +34,14 @@ are welcomed and appreciated but will be thoroughly reviewed and discussed. **Pl
 # How to Contribute
 * [CONTRIBUTING DOC](https://github.com/JasonBrannon/GoVRE/blob/master/CONTRIBUTING.md)
 
+## Setup Environment
+
+1. I'm currently using Andorid Development Studio 
+2. GoVRE requires android-mapviewballoons
+3. Libraries are already included (json-simple, jsoup, libGoogleAnalytics, protobuf-java, twitter4j)
+4. JDK Compiler Compliance Level: 1.6
+5. Google Play Services is included, was in the processing of updating Google Maps API, the current version is depreciated.
+
+
 # License
 * [LICENSE DOC](https://github.com/JasonBrannon/GoVRE/blob/master/LICENSE)
