@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.echo5bravo.govre"
+    android:versionCode="15"
+    android:versionName="2.0.2.0">
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- External storage for caching. Don't know if needed for MAPS yet -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- Maps API needs OpenGL ES 2.0. -->
+  	<uses-feature
+    android:glEsVersion="0x00020000"
+    android:required="true"/>
+    
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>  
+
+     <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar">
+        
+        <!-- iMAC KEY -->
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+    	android:value="AIzaSyD9MpaBgLaaYU0hb06UBz__Sd2OM8h3R_g"/>
+         
+         
+ 		<!-- Used for Google Map View Control -->
+ 		<uses-library android:name="com.google.android.maps"/> 
+        <activity
+            android:name="com.echo5bravo.govre.UI.ActivityStationList"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"  > 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+        <activity
+            android:name="com.echo5bravo.govre.UI.ActivityGoogleMapV2"  
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"  >                                                               
+        </activity> 
+        <activity
+            android:name="com.echo5bravo.govre.UI.ActivityGoogleMap"  
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"  >                                                               
+        </activity>        
+        <activity
+            android:name="com.echo5bravo.govre.UI.ActivityTwitterFeed"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"  >              
+        </activity> 
+        <activity
+        	android:name="com.echo5bravo.govre.UI.ActivityPreferences"
+        	android:label="@string/set_preferences"
+        	android:launchMode="singleTop"
+        	android:alwaysRetainTaskState="true"  >        	
+        </activity>
+        <activity
+        	android:name="com.echo5bravo.govre.UI.ActivityAbout"
+        	android:label="@string/app_name"
+        	android:launchMode="singleTop"
+        	android:alwaysRetainTaskState="true"  >        	
+        </activity>
+        <activity
+        	android:name="com.echo5bravo.govre.UI.ActivityOldMap"
+        	android:label="@string/app_name"
+        	android:launchMode="singleTop"
+        	android:alwaysRetainTaskState="true"  >
+        </activity>
+        <activity
+        	android:name="com.echo5bravo.govre.UI.ActivityAlerts"
+        	android:label="@string/app_name"
+        	android:launchMode="singleTop"
+        	android:alwaysRetainTaskState="true" >         	     	
+        </activity>
+        <activity
+            android:name="com.echo5bravo.govre.UI.ActivityStationSchedule"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"  >                       
+        </activity> 
+        <activity
+        	android:name="com.echo5bravo.govre.UI.ActivityTabStationSchedule"
+        	android:label="@string/app_name"
+        	android:launchMode="singleTop"
+        	android:alwaysRetainTaskState="true"  >        	
+        </activity>
+        <activity
+        	android:name="com.echo5bravo.govre.UI.ActivityUserGuide"
+        	android:label="@string/app_name"
+        	android:launchMode="singleTop"
+        	android:alwaysRetainTaskState="true"  >        	
+        </activity>        
+    </application>
+</manifest>

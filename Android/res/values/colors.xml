@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="transparent_blue">#80004488</color>
+	<color name="transparent">#00000000</color>
+	<color name="background">#ff000000</color>
+	<color name="row">#cdc9c9</color>
+	<color name="text">#2e3f69</color>
+	<color name="subtext">#405987</color>
+	<color name="needle">#8ac600</color>
+	<color name="blueline">#4e7ac7</color>
+	<color name="redline">#CC0000</color>
+	<color name="linealert">#4e7ac7</color>
+	<color name="roseate">#35478c</color>
+	<color name="roseText">#35478c</color> 
+	<color name="status">#7fb2f0</color> 
+	<color name="white">#ffffff</color> 
+	<color name="gray">#686565</color> 
+	<color name="black">#000000</color> 
+</resources>

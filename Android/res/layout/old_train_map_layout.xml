@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:baselineAligned="false"
+	style="?pageBackground">	
+	
+     <LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="50dp"
+		android:baselineAligned="false">
+	
+		
+				<!-- HEADER 1 GRAPHIC --> 
+				<ImageView 
+					android:layout_height="wrap_content"   
+					android:layout_width="wrap_content" 
+					android:id="@+id/imgVRE" 						    	
+					android:src="@drawable/govre_logo"
+					android:contentDescription="@string/govre"
+					android:paddingBottom="5dp"
+					android:paddingTop="0dp"
+					>
+				</ImageView> 
+				
+				 <LinearLayout
+					android:orientation="horizontal" 
+					android:layout_width="fill_parent" 
+					android:layout_height="50dp" 
+					android:gravity="right"
+					>
+					
+				      <!-- SCHEDULE -->
+					 <ImageView 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						android:id="@+id/imgSched" 						    	
+						android:src="@drawable/sched"	
+						android:contentDescription="@string/sched"				
+						android:paddingLeft="23dp"
+						android:paddingTop="10dp">
+					</ImageView>
+					
+				     <!-- ALERTS -->
+					 <ImageView 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						android:id="@+id/imgAlerts" 						    	
+						android:src="@drawable/alerts"	
+						android:contentDescription="@string/alert"				
+						android:paddingLeft="23dp"
+						android:paddingTop="10dp">
+					</ImageView>
+					
+					 <!-- MAP -->
+					 <ImageView 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content"   
+						android:id="@+id/imgMap" 						    	
+						android:src="@drawable/map"					 
+						android:contentDescription="@string/map"		
+						android:paddingLeft="23dp"
+						android:paddingTop="10dp">				
+					</ImageView>
+			
+					 <!-- TWITTER --> 
+					 <ImageView 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content"  
+						android:id="@+id/imgTwitter" 						    	
+						android:src="@drawable/twitter"	 				
+						android:contentDescription="@string/twitter"		
+						android:paddingLeft="23dp"
+						android:paddingRight="12dp"
+						android:paddingTop="10dp">				
+					</ImageView>
+				</LinearLayout>
+	</LinearLayout>
+
+	
+	<!-- SCHEDULE LIST VIEW -->	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		style="?whiteBackground"
+		>	
+				
+		<!-- IMAGE MAP-->
+		<com.echo5bravo.govre.UTILS.ImageZoom.ImageViewTouch
+			android:id="@+id/imgTrainMap"
+			android:scaleType="fitCenter"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />	
+			
+		<!-- CUSTOM PROGRESS SPINNER -->
+		<ImageView
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+			android:layout_margin="1dp"
+			android:gravity="center"
+       		android:background="@drawable/loading"
+			android:contentDescription="@string/loading"
+			android:id="@+id/splashSpinner"/>
+		
+		<!-- NO SIGNAL GRAPHIC --> 
+		<ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+			android:layout_margin="1dp"
+			android:gravity="center" 
+			android:id="@+id/imgNoSignal" 						    	
+			android:src="@drawable/no_signal"
+			android:contentDescription="@string/nosignal"
+			android:paddingBottom="5dp"/>
+		
+	</RelativeLayout>
+	
+	 <!-- SPACER -->	
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="3sp">
+	</LinearLayout>
+	
+	<!-- STATION TITLE -->	
+    <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="3"
+    style="?whiteBackground"	>
+	    <TableRow>
+	        <TextView android:id="@+id/txtOnTime" 		
+			    android:textStyle="bold"
+		        android:textSize="14sp"
+		        android:textColor="@color/text"
+		        android:text="@string/map_ontime"
+		         />
+	        <ImageView 
+				android:layout_height="fill_parent"   
+				android:layout_width="fill_parent" 
+				android:id="@+id/OnTime"
+				android:src="@drawable/green" 
+				android:paddingBottom="5dp"
+				android:paddingLeft="15dp"
+				android:contentDescription="@string/map_ontime"
+				/>
+	    </TableRow>	
+	    <TableRow>
+	        <TextView android:id="@+id/txtDelayed" 		
+			    android:textStyle="bold"
+		        android:textSize="14sp"
+		        android:textColor="@color/text"
+		        android:text="@string/map_delay"
+		         />
+	        <ImageView 
+				android:layout_height="fill_parent"   
+				android:layout_width="fill_parent" 
+				android:id="@+id/imgred"
+				android:src="@drawable/red" 
+				android:paddingBottom="5dp"
+				android:paddingLeft="15dp"
+				android:contentDescription="@string/map_delay"
+				/>
+	    </TableRow>
+	    <TableRow>    
+	         <TextView android:id="@+id/txtLostComm" 		
+			    android:textStyle="bold"
+		        android:textSize="14sp"
+		        android:textColor="@color/text"
+		        android:text="@string/map_lost"
+		         />
+	        <ImageView 
+				android:layout_height="fill_parent"   
+				android:layout_width="fill_parent" 
+				android:id="@+id/imggray"
+				android:src="@drawable/gray" 
+				android:paddingBottom="5dp"
+				android:paddingLeft="15dp"
+				android:contentDescription="@string/map_lost"
+				/>
+	    </TableRow>
+	</TableLayout>	
+ </LinearLayout>
+
