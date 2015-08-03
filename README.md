@@ -36,7 +36,7 @@ Download App from [Google Play](https://play.google.com/store/apps/details?id=co
 
 ## Setup Environment
 
-1. I'm currently using Andorid Development Studio 
+1. I'm currently using Android Development Studio 
 2. GoVRE requires android-mapviewballoons
 3. Libraries are already included (json-simple, jsoup, libGoogleAnalytics, protobuf-java, twitter4j)
 4. JDK Compiler Compliance Level: 1.6
