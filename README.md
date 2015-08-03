@@ -26,7 +26,7 @@ Any contributions, large or small, major features, bug fixes, additional languag
 are welcomed and appreciated but will be thoroughly reviewed and discussed. **Please read `CONTRIBUTING.md` first!**
 
 # Google Marketplace
-[Google Play](https://play.google.com/store/apps/details?id=com.echo5bravo.govre&hl=en)
+Download App from [Google Play](https://play.google.com/store/apps/details?id=com.echo5bravo.govre&hl=en)
 
 # ToDos
 - Add Spotsy Station when available (Probably Fall 2015)
