@@ -7,19 +7,19 @@ Northern Virginia suburbs to Union Station in Washington, D.C, GoVRE is the most
 
 # So What's the Status Here?
 
-> What's' happening to GoVRE?
+> What's happening to GoVRE?
 
-Since VRE (Virginia Rail Express) has released an offical Mobile app which includes ticket purchasing, GoVRE will become irrelevant over time.  However, I'm making GoVRE open source to provide a community supported alternative.'
+Since VRE (Virginia Rail Express) has released an offical Mobile app which includes ticket purchasing, GoVRE will become irrelevant over time.  However, I'm making GoVRE open source to provide a community supported alternative.
 
 > Is there an iOS version?
 
-I started a Swift version of GoVRE, but squashed the development after learning of the new VRE App.  Fill free to begin this effort if you'd like.'
+I started a Swift version of GoVRE, but squashed the development after learning of the new VRE App.  Fill free to begin this effort if you'd like.
 
 > How can I help?
 
 Please see the [issues](https://github.com/JasonBrannon/GoVRE/issues) section to report any bugs or feature requests and
-to see the list of known issues. We can't promise fast response times since we all have full time jobs of our own, but I
-will do our best to respond in a timely fashion.  If you'd like to contribute, please fork this repository and contribute back using
+to see the list of known issues. I can't promise fast response times since I juggle work and family obligations, but I
+will do my best to respond in a timely fashion.  If you'd like to contribute, please fork this repository and contribute back using
 [pull requests](https://github.com/JasonBrannon/GoVRE/pulls).
 
 Any contributions, large or small, major features, bug fixes, additional language translations, unit/integration tests
