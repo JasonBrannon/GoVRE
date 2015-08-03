@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:id="@+id/root" 
+	style="?pageBackground">
+	
+        <!-- Currently, this TextView is required to Maintain the Logo/Menu visibility -->
+	    <TextView 
+	        android:id="@+id/bearing" 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="48sp"
+			android:textColor="@color/text" 
+			android:layout_alignParentRight="true" />
+		
+		<!-- HEADER 1 GRAPHIC --> 
+		<ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imgVRE" 						    	
+			android:src="@drawable/govre_logo"
+			android:contentDescription="@string/govre"
+			android:paddingBottom="5dp"
+		/>
+		
+		<LinearLayout
+			android:orientation="horizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="50dp" 
+			android:gravity="right"
+		>
+				
+		<!-- ALERTS -->
+		<ImageView 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/imgAlerts" 						    	
+			android:src="@drawable/alerts"	
+			android:contentDescription="@string/alert"				
+			android:paddingRight="19dp"
+			android:paddingTop="5dp">
+		</ImageView>
+						
+		<!-- MAP -->
+		<ImageView 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/imgMap" 						    	
+			android:src="@drawable/map"					
+			android:contentDescription="@string/map"		
+			android:paddingRight="19dp"
+			android:paddingTop="5dp">				
+		</ImageView>
+				
+		<!-- TWITTER -->
+		<ImageView 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/imgTwitter" 						    	
+			android:src="@drawable/twitter"					
+			android:contentDescription="@string/twitter"		
+			android:paddingRight="10dp"
+			android:paddingTop="5dp">				
+		</ImageView>
+	</LinearLayout>
+
+	<!-- BEGIN MAIN CONTENT PLACE HOLDERS -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/views"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/bearing" 
+		android:baselineAligned="false"
+		style="?whiteBackground">
+
+		<!-- STATION LIST LINEAR LAYOUT (LEFT SIDE)-->	
+		<LinearLayout 
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:layout_weight="1"
+			>
+	
+			<!-- STATION LIST -->			
+			<ListView			
+				android:id="@+id/listView"
+				style="?listviewStyle"
+	        	android:layout_weight="1"
+	        	android:layout_width="fill_parent"
+				android:layout_height="fill_parent"				
+				/> 
+				
+			<!-- CUSTOM PROGRESS SPINNER -->
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				android:layout_margin="1dp"
+				android:gravity="center"
+	  			android:background="@drawable/loading"
+				android:contentDescription="@string/loading"
+				android:id="@+id/splashSpinner"/>
+	
+		
+		</LinearLayout>
+	
+	    <!-- GOOGLE MAP LINEAR LAYOUT (RIGHT SIDE)-->		
+		<LinearLayout 
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:padding="0dp" 
+			android:layout_weight="1"
+			>
+	
+			<!-- GOOGLE MAP -->			
+			<com.google.android.maps.MapView 	   
+			    android:id="@+id/mapview"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:clickable="true" 
+				android:apiKey="00DcWlIURzMoymyRnAdkzjAxADcilm4qbFFqwrQ" />
+			
+			<!-- CUSTOM PROGRESS SPINNER -->
+			<ImageView
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				android:layout_margin="1dp"
+				android:gravity="center"
+	       		android:background="@drawable/loading"
+				android:contentDescription="@string/loading"
+				android:id="@+id/splashSpinner"/>
+		
+			<!-- NO SIGNAL GRAPHIC --> 
+			<ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				android:layout_margin="1dp"
+				android:gravity="center" 
+				android:id="@+id/imgNoSignal" 						    	
+				android:src="@drawable/no_signal"
+				android:contentDescription="@string/nosignal"
+				android:paddingBottom="5dp"/>
+			
+		</LinearLayout>
+	</LinearLayout>		
+</RelativeLayout>
