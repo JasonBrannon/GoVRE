@@ -41,7 +41,7 @@ public class ProxyNetworkTwitter {
         	builder.setDebugEnabled(true);
             builder.setUseSSL(true);
             builder.setApplicationOnlyAuthEnabled(true);
-        	builder.setOAuthConsumerKey("fGJS44QDvQhFgWB8j7e5KQ").setOAuthConsumerSecret("sd74AghvZHAgghiA9XPl0lbVHyG8YIuGFwtnpkMx8");
+        	builder.setOAuthConsumerKey("xxx").setOAuthConsumerSecret("xxx");
             OAuth2Token token = new TwitterFactory(builder.build()).getInstance().getOAuth2Token();
         	
         	// exercise & verify
@@ -49,8 +49,8 @@ public class ProxyNetworkTwitter {
             cb.setDebugEnabled(true);
             cb.setUseSSL(true);
             cb.setApplicationOnlyAuthEnabled(true);
-            cb.setOAuthConsumerKey("fGJS44QDvQhFgWB8j7e5KQ");
-            cb.setOAuthConsumerSecret("sd74AghvZHAgghiA9XPl0lbVHyG8YIuGFwtnpkMx8");
+            cb.setOAuthConsumerKey("xxx");
+            cb.setOAuthConsumerSecret("xxx");
             cb.setOAuth2TokenType(token.getTokenType());
             cb.setOAuth2AccessToken(token.getAccessToken());
 
