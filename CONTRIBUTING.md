@@ -1,5 +1,5 @@
-Contributing
-============
+Contributing to GoVRE
+=====================
 
 ## Reporting issues
 
