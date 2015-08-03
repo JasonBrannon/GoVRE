@@ -9,5 +9,8 @@ Northern Virginia suburbs to Union Station in Washington, D.C, GoVRE is the most
 # ToDos
 - Add Spotsy Station when available (Probably Fall 2015)
 
+# How to Contribute
+* [CONTRIBUTION DOC](https://github.com/JasonBrannon/GoVRE/blob/master/CONTRIBUTION.md)
+
 # License
 * [LICENSE DOC](https://github.com/JasonBrannon/GoVRE/blob/master/LICENSE)
