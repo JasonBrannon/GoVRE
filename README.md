@@ -41,7 +41,7 @@ Download App from [Google Play](https://play.google.com/store/apps/details?id=co
 2. GoVRE requires android-mapviewballoons
 3. Libraries are already included (json-simple, jsoup, libGoogleAnalytics, protobuf-java, twitter4j)
 4. JDK Compiler Compliance Level: 1.6
-5. Google Play Services is included, was in the processing of updating Google Maps API, the current version is depreciated.
+5. Google Play Services is included, was in the process of updating Google Maps API, the current version is depreciated.
 
 
 # License
