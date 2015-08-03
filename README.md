@@ -7,7 +7,7 @@ Northern Virginia suburbs to Union Station in Washington, D.C, GoVRE is the most
 
 # So What's the Status Here?
 
-> What happening to GoVRE?
+> What's' happening to GoVRE?
 
 Since VRE (Virginia Rail Express) has released an offical Mobile app which includes ticket purchasing, GoVRE will become irrelevant over time.  However, I'm making GoVRE open source to provide a community supported alternative.'
 
