@@ -28,6 +28,10 @@ are welcomed and appreciated but will be thoroughly reviewed and discussed. **Pl
 # Google Marketplace
 Download App from [Google Play](https://play.google.com/store/apps/details?id=com.echo5bravo.govre&hl=en)
 
+# Architecture
+![alt tag](https://github.com/JasonBrannon/GoVRE/blob/master/Assets/ExternalInterfaces.png)
+
+
 # ToDos
 - Add Spotsy Station when available (Probably Fall 2015)
 - Add "Toothing" support for **John Unit**
